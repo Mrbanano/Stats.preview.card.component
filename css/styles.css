@@ -66,6 +66,8 @@ body{
     padding: 0 35px;
     font: var(--BodyMobile);
     color: var(--Slightlytransparent);
+    max-width: 360px;
+    margin: 0 auto;
 }
 
 .stats{
@@ -86,3 +88,52 @@ body{
     letter-spacing: 0.7px;
     margin-block-end: 30px;
 }
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .stats{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .Main{
+        display: flex;
+        flex-direction: row;
+        max-width: 1110px;
+        max-height: 452px;
+    }
+    .Main-text{
+        order: -1;
+        text-align: left;
+    }
+    .Main-text h1{
+        margin-inline-start: 75px;
+        margin-block-start: 75px;
+        padding-left: 0;
+    }
+    .Main-text .description{
+        padding-left: 0;
+        margin: 32px 0px 80px 75px;
+    }
+    .Main-image{
+        width: 539px;
+        height: 446px;
+        margin-right: 0;
+    }
+    .stats{
+        justify-content:flex-start;
+        margin: 0 0 0 75px;
+        text-align: left;
+        padding: 0;
+    }
+    
+    .stat p{
+        margin-block-start: 15px;
+        padding-left: 0;
+    }
+}
+
