@@ -30,10 +30,11 @@ body{
 .Main{
     margin: 86px auto;
     background-color: var(--Darkdesaturatedblue);
-    border: 2px solid red;
     text-align: center;
     min-width: 340px;
     width: 85%;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 .Main-image{
@@ -48,9 +49,6 @@ body{
     margin: 0 auto;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
-}
-.Main-text{
-    border: 2px solid beige;
 }
 
 .Main-text h1{
@@ -71,9 +69,20 @@ body{
 }
 
 .stats{
-
+ margin-block-start: 40px;
+ margin-block-end: 40px;
+ padding-block-end: 40px;
 }
 
-.stat{
+.stat h2{
 
+    font: var(--NumberMobile);
+    color: var(--Slightly);
+    margin-block-end: 15px;
+}
+
+.stat p{
+    font: var(--LabelMobile);
+    letter-spacing: 0.7px;
+    margin-block-end: 30px;
 }
