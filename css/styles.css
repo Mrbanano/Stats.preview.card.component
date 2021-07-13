@@ -55,12 +55,19 @@ body{
 
 .Main-text h1{
     margin-block-start: 40px;
+    margin-block-end: 20px;
     padding:0 22px;
     font:var(--headLineMobile1);
     color: var(--White);
 }
 .Main-text h1 span{
     color: var(--Softviolet);
+}
+
+.Main-text p{
+    padding: 0 35px;
+    font: var(--BodyMobile);
+    color: var(--Slightlytransparent);
 }
 
 .stats{
